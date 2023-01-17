@@ -28,6 +28,7 @@
                     <input type="submit" value="Save" name="create-button"/>
 
                 </form>
+
                 <?php
                     //Create record function
 
@@ -48,6 +49,30 @@
                         } else{
                             echo 'Connection success!';
                         }
+
+                            //Storing user input into variables
+
+                            $movieTitle = $_POST['create-title'];
+                            $movieGenre = $_POST['create-genre'];
+                            $movieDirector = $_POST['create-director'];
+
+                            //Attempting to INSERT Data into our table
+
+                            $sql = "INSERT INTO movieflix_table (title,genre,director) VALUES ('$movieTitle','$movieGenre','$movieDirector')";
+
+                            //Check if inserting data was successful
+                            if(mysqli_query($connection, $sql)){
+
+                                echo 'Successfully Inserted data';
+                            
+                            } else{
+                                echo 'Error: '.sql.mysqli_error($connection);
+                            }
+
+                            //CLose connection
+
+                            mysqli_close($connection);
+
                     }
                     if(isset($_POST['create-button'])){
 
