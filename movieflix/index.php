@@ -2,6 +2,15 @@
 <html>
         <head>
             <title>MovieFlix CRUD App</title>
+            <style>
+
+                #create-form{
+                    display:none;
+                    
+                }
+
+
+            </style>
         </head>
         <body>
             <div>
@@ -13,12 +22,14 @@
                 <button id="delete-button">Delete Record</button>
 
                 <form action="" method="POST" id="create-form">
-                    <input type="text" placeholders="Enter movie title" name=""/>
-                    <input type="text" placeholders="Enter movie genre" name=""/>
-                    <input type="text" placeholders="Enter movie director" name=""/>
+                    <input type="text" placeholder="Enter movie title" name=""/><br />
+                    <input type="text" placeholder="Enter movie genre" name=""/><br />
+                    <input type="text" placeholder="Enter movie director" name=""/><br />
+                    <input type="submit" value="Save"/>
 
                 </form>
                 
             </div>
-
+                <script src="script.js"></script>
         </body>
+</html>
