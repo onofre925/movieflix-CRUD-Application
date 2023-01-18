@@ -91,7 +91,7 @@
 
                 </form>
 
-                <form action="" method="POST" id="delete-form">
+                <form action="delete.php" method="POST" id="delete-form">
                         <input type="text" placeholder="Enter Record ID" name="delete-ID"/><br />
                         <input type="submit" value="Save" name="submit-delete"/>
 
