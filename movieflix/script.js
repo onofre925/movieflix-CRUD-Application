@@ -6,6 +6,9 @@ let updateButton = document.getElementById('update-button');
 let updateForm = document.getElementById('update-form');
 let isUpdateFormDisplaying = false;
 
+let deleteButton = document.getElementById('delete-button');
+let deleteForm = document.getElementById('delete-form');
+let isDeleteFormDisplaying = false;
 //Toggle form
 createButton.onclick = () => {
   //check if function is working
@@ -33,6 +36,19 @@ updateButton.onclick = function(){
       updateForm.style.display = 'none';
       isUpdateFormDisplaying = false;
      }
+}
+
+//Toggle Delete form
+deleteButton.onclick = function(){
+  if(isDeleteFormDisplaying ==false){
+    //Display the delete form
+    deleteForm.style.display = 'block';
+    isDeleteFormDisplaying = true;
+  }else{
+    //Hide the form
+    deleteForm.style.display ='none';
+    isDeleteFormDisplaying = false;
+  }
 }
 
 

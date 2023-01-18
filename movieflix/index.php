@@ -4,7 +4,7 @@
             <title>MovieFlix CRUD App</title>
             <style>
 
-                #create-form, #update-form{
+                #create-form, #update-form, #delete-form{
                     display:none;
                     
                 }
@@ -88,6 +88,12 @@
                     <input type="text" placeholder="Enter movie genre" name="update-genre"/><br />
                     <input type="text" placeholder="Enter movie director" name="update-director"/><br />
                     <input type="submit" value="Save" name="submit-update"/>
+
+                </form>
+
+                <form action="" method="POST" id="delete-form">
+                        <input type="text" placeholder="Enter Record ID" name="delete-ID"/><br />
+                        <input type="submit" value="Save" name="submit-delete"/>
 
                 </form>
 
