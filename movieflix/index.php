@@ -4,7 +4,7 @@
             <title>MovieFlix CRUD App</title>
             <style>
 
-                #create-form{
+                #create-form, #update-form{
                     display:none;
                     
                 }
@@ -66,10 +66,12 @@
 
                 <?php endwhile ?>
                     </table>
+
+
             </div>
             <div class="content-wrapper">
                 <button id="create-button">Create Record</button>
-                <button id="edit-button">Edit Record</button>
+                <button id="update-button">Edit Record</button>
                 <button id="delete-button">Delete Record</button>
 
                 <form action="create.php" method="POST" id="create-form">
@@ -79,6 +81,17 @@
                     <input type="submit" value="Save" name="create-button"/>
 
                 </form>
+
+                <form action="" method="POST" id="update-form">
+                    <input type="text" placeholder="Enter Record ID" name="update-ID"/><br />
+                    <input type="text" placeholder="Enter movie title" name="update-title"/><br />
+                    <input type="text" placeholder="Enter movie genre" name="update-genre"/><br />
+                    <input type="text" placeholder="Enter movie director" name="update-director"/><br />
+                    <input type="submit" value="Save" name="submit-update"/>
+
+                </form>
+
+            
 
                
             </div>
