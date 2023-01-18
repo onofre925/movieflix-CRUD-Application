@@ -82,7 +82,7 @@
 
                 </form>
 
-                <form action="" method="POST" id="update-form">
+                <form action="update.php" method="POST" id="update-form">
                     <input type="text" placeholder="Enter Record ID" name="update-ID"/><br />
                     <input type="text" placeholder="Enter movie title" name="update-title"/><br />
                     <input type="text" placeholder="Enter movie genre" name="update-genre"/><br />
