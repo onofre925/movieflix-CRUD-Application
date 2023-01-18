@@ -2,8 +2,13 @@
 <html>
         <head>
             <title>MovieFlix CRUD App</title>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
             <style>
+                body{
+                    font-family: 'Roboto', sans-serif;
 
+                }
+                
                 #create-form, #update-form, #delete-form{
                     display:none;
                     
@@ -37,7 +42,7 @@
                     width: 140px;
                     height: 37.5px;
                     background-color: blue;
-                    color: #FFFFFF;
+                    color: #FFFFAA;
                     border-radius: 4px;
                     border: 1.5px solid black;
                     letter-spacing: 1.5px;
@@ -48,7 +53,7 @@
                     width: 76px;
                     height: 30px;
                     background-color: blue;
-                    color: #FFFFFF;
+                    color: #FFFFAA;
                     border-radius: 2px;
                     border: none;
                     cursor: pointer
@@ -58,6 +63,7 @@
                     margin: 6px;
                     width: 260px;
                     height: 32px;
+                    padding: 3px;
                 }
 
             </style>
