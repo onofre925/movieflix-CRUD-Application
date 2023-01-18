@@ -34,9 +34,7 @@ function updateRecord(){
     $updateQuery = mysqli_query($connection, $sql);//execute our SQL Query
 
     if(!$updateQuery){
-        echo 'Error: '.$sql.nysqli_error($connection);
-    }else{
-        echo 'Update Successful';
+        echo 'Error: '.$sql.mysqli_error($connection);
     }
 
     //Close connection

@@ -32,8 +32,6 @@ function deleteRecord(){
 
     if(!$deleteQuery){
         echo 'Error :'.$sql.mysqli_error($connection);
-    }else{
-        'Deleted Data Successfully';
     }
 
     //Close database connection

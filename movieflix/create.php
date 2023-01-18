@@ -32,7 +32,7 @@
                             //Check if inserting data was successful
                             if(mysqli_query($connection, $sql)){
 
-                                echo 'Successfully Inserted data';
+                                echo '';
                             
                             } else{
                                 echo 'Error: '.sql.mysqli_error($connection);

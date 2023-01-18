@@ -54,6 +54,12 @@
                     cursor: pointer
                 }
 
+                input[type="text"]{
+                    margin: 6px;
+                    width: 260px;
+                    height: 32px;
+                }
+
             </style>
         </head>
         <body>
@@ -74,9 +80,7 @@
                         //Check if connection wa successful or not
                             if(!$connection){
                             die('Connection unsuccessful : '.mysqli_connect_error());
-                            } else{
-                                echo 'Connection success!';
-                            }
+                            } 
 
                             //Query the table for the records
                             $sql = "SELECT * FROM movieflix_table";//set up our query
