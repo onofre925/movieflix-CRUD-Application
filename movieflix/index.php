@@ -33,6 +33,27 @@
                     text-align: center;
                 }
 
+                #create-button, #update-button, #delete-button{
+                    width: 140px;
+                    height: 37.5px;
+                    background-color: blue;
+                    color: #FFFFFF;
+                    border-radius: 4px;
+                    border: 1.5px solid black;
+                    letter-spacing: 1.5px;
+                    cursor: pointer
+                }
+
+                .small-button{
+                    width: 76px;
+                    height: 30px;
+                    background-color: blue;
+                    color: #FFFFFF;
+                    border-radius: 2px;
+                    border: none;
+                    cursor: pointer
+                }
+
             </style>
         </head>
         <body>
@@ -102,7 +123,7 @@
                         <input type="text" placeholder="Enter movie title" name="create-title"/><br />
                         <input type="text" placeholder="Enter movie genre" name="create-genre"/><br />
                         <input type="text" placeholder="Enter movie director" name="create-director"/><br />
-                        <input type="submit" value="Save" name="create-button"/>
+                        <input type="submit" value="Save" name="create-button" class="small-button"/>
 
                     </form>
 
@@ -111,13 +132,13 @@
                         <input type="text" placeholder="Enter movie title" name="update-title"/><br />
                         <input type="text" placeholder="Enter movie genre" name="update-genre"/><br />
                         <input type="text" placeholder="Enter movie director" name="update-director"/><br />
-                        <input type="submit" value="Save" name="submit-update"/>
+                        <input type="submit" value="Save" name="submit-update" class="small-button"/>
 
                     </form>
 
                     <form action="delete.php" method="POST" id="delete-form">
                             <input type="text" placeholder="Enter Record ID" name="delete-ID"/><br />
-                            <input type="submit" value="Save" name="submit-delete"/>
+                            <input type="submit" value="Save" name="submit-delete" class="small-button"/>
 
                     </form>
 
